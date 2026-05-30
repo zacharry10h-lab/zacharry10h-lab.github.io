@@ -883,12 +883,6 @@
 </footer>
 
 <script>
-  document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    document.getElementById('formSuccess').style.display = 'block';
-    this.querySelector('button[type="submit"]').textContent = 'Sent!';
-    this.querySelector('button[type="submit"]').disabled = true;
-  });
 
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
